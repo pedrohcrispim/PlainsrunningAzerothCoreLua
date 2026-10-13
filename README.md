@@ -1,0 +1,1 @@
+Plainsrunning para azerothcore 
