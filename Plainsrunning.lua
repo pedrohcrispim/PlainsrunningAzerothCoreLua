@@ -4,16 +4,14 @@
 -- Tauren se move continuamente, ate +30% em 10 segundos.
 -- Reseta ao parar, entrar em combate, montar ou entrar em
 -- masmorra/raid.
---
--- Versao 100% via Eluna (sem spell customizado, sem DBC,
--- sem patch de cliente). Sem icone de buff - so a mecanica.
+-- Sem icone de buff - so a mecanica.
 --============================================================
 
 local TAUREN_RACE          = 6
 local RAMP_TIME             = 10     -- segundos para atingir o bonus maximo
 local MAX_BONUS              = 0.30   -- +30% de velocidade de corrida
 local TICK_MS                 = 1000   -- intervalo de checagem (ms)
-local MOVE_THRESHOLD        = 0.4    -- distancia^2 minima por tick para contar como "em movimento"
+local MOVE_THRESHOLD        = 0.4    -- distancia minima por tick para contar como "em movimento"
 
 local MOVE_RUN = 1 -- indice de Player:SetSpeed para velocidade de corrida
 
